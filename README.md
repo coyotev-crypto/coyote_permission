@@ -13,12 +13,12 @@ Add it in your root build.gradle at the end of repositories:
 			maven { url 'https://jitpack.io' }
 		}
 	}
-Step 2. 添加dependency
+Step 2. app build文件添加dependency
 
 	apply plugin: 'android-aspectjx'  //在顶部添加
 	
 	dependencies {
-	        implementation 'com.github.lrhcoyote:coyote_permission:version'
+	        implementation 'com.github.lrhcoyote:coyote_permission:1.0.0'
 	}
 
 使用方法：
@@ -41,7 +41,7 @@ Step 2. 添加dependency
     public void methodName(){}
     //用户取消之后的操作
     @PermissionCancel
-    public void methodName(){}
+    public void methodName(int requestCode){}
     
 在普通类中使用这里使用Activity来示例Fragment也一样：
 
