@@ -43,7 +43,6 @@ Step 2. 添加dependency
 在普通类中使用这里使用Activity来示例Fragment也一样：
 
    public class MainActivity extends AppCompatActivity {
-   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +55,6 @@ Step 2. 添加dependency
         super.onDestroy();
         CoyotePermission.unBinder();
     }
-    
  }
 
 
