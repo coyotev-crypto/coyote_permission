@@ -44,7 +44,6 @@ Step 2. 添加dependency
 
 
    public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,15 +56,14 @@ Step 2. 添加dependency
         super.onDestroy();
         CoyotePermission.unBinder();
     }
-}
+ }
 
 
  class PermissionRequests{
-   public PermissionRequests(){
-    }
+ 
+   public PermissionRequests(){}
+    
     @PermissionRequest(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-    public void permissionRequest(){
-
-    }
-}
+    public void permissionRequest(){}
+ }
     
