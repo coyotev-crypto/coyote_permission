@@ -40,15 +40,14 @@ Step 2. 添加dependency
     @PermissionCancel
     public void methodName(){}
     
-    
 在普通类中使用这里使用Activity来示例Fragment也一样：
+
 
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        permissionRequest();
         CoyotePermission.bind(this);
         new PermissionRequests().permissionRequest();
     }
