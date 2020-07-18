@@ -44,26 +44,28 @@ Step 2. 添加dependency
 
 
    public class MainActivity extends AppCompatActivity {
-       @Override
-       protected void onCreate(Bundle savedInstanceState) {
-           super.onCreate(savedInstanceState);
-           setContentView(R.layout.activity_main);
-           CoyotePermission.bind(this);
-           new PermissionRequests().permissionRequest();
-       }
-       @Override
-       protected void onDestroy() {
-           super.onDestroy();
-           CoyotePermission.unBinder();
-       }
-   }
 
-   class PermissionRequests{
-      public PermissionRequests(){
-       }
-       @PermissionRequest(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-       public void permissionRequest(){
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        CoyotePermission.bind(this);
+        new PermissionRequests().permissionRequest();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        CoyotePermission.unBinder();
+    }
+}
 
-       }
-   }
+
+ class PermissionRequests{
+   public PermissionRequests(){
+    }
+    @PermissionRequest(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+    public void permissionRequest(){
+
+    }
+}
     
