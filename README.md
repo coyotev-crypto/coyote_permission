@@ -13,6 +13,7 @@ Add it in your root build.gradle at the end of repositories:
 		}
 	}
 Step 2. 添加dependency
+
 	apply plugin: 'android-aspectjx'  //在顶部添加
 	
 	dependencies {
@@ -25,6 +26,7 @@ Step 2. 添加dependency
 	PermissionCancel  用户取消  
 	PermissionDenied  用户拒绝
 在Activity或Fragment中使用
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +39,11 @@ Step 2. 添加dependency
     //用户取消之后的操作
     @PermissionCancel
     public void methodName(){}
+    
+    
 在普通类中使用这里使用Activity来示例Fragment也一样：
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
