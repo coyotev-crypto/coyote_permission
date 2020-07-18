@@ -4,6 +4,7 @@ Add it in your root build.gradle at the end of repositories:
 
 	dependencies {
 		...
+		classpath "com.android.tools.build:gradle:3.5.2"
 		classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.6'
 	}
 	allprojects {
