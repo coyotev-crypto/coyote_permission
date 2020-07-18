@@ -57,6 +57,7 @@ Step 2. 添加dependency
            CoyotePermission.unBinder();
        }
    }
+
    class PermissionRequests{
       public PermissionRequests(){
        }
