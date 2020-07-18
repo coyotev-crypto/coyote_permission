@@ -22,10 +22,12 @@ Step 2. 添加dependency
 	}
 
 使用方法：
+
 	注解说明
 	PermissionRequest 请求权限注解 value 需要请求的权限支持多权限请求  requestCode 请求码
 	PermissionCancel  用户取消  
 	PermissionDenied  用户拒绝
+
 在Activity或Fragment中使用
 
     @Override
