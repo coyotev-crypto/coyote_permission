@@ -1,10 +1,10 @@
 # coyote_permission
 android 权限申请框架
 Add it in your root build.gradle at the end of repositories:
- 	dependencies {
-        classpath "com.android.tools.build:gradle:3.4.1"     //gradle版本修改为3.5以下
-        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.6'
-    	}
+        dependencies {
+		classpath "com.android.tools.build:gradle:3.4.1"     //gradle版本修改为3.5以下
+                classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.6'
+	}
 	allprojects {
 		repositories {
 			...
